@@ -25,5 +25,13 @@ function calculateAvarageMark(subjectCount, totalMarks) {
     let avarage = (totalMarks / subjectCount) * 100;
     return avarage;
 }
-let avgMark = calculateAvarageMark(5, 420);
+let avgMark = calculateAvarageMark(420, 500);
 console.log(avgMark);
+//functions with optional parameters
+function addNumbers(firstNumber, secondNumber) {
+    if (secondNumber) {
+        return firstNumber + secondNumber;
+    }
+    return firstNumber;
+}
+console.log(addNumbers(10));

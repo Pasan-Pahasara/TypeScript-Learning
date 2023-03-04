@@ -35,5 +35,18 @@ function calculateAvarageMark(
     return avarage;
 }
 
-let avgMark = calculateAvarageMark(5, 420);
+let avgMark = calculateAvarageMark(420, 500);
 console.log(avgMark)
+
+//functions with optional parameters
+/**
+ * දෙන value එකක් optional නම් ඒකට අපි parameters වලින් pass කරන කොටම ? mark එකක් දෙනවා. ඒක if-else එකෙන් handle කරනවා.
+ */
+function addNumbers(firstNumber:number, secondNumber?:number){ 
+    if(secondNumber){
+        return firstNumber+secondNumber;
+    }
+   return firstNumber;
+}
+console.log(addNumbers(10))
+
