@@ -58,3 +58,13 @@ let employee2 = {
     id: 2,
     name: "Kamal"
 };
+//Union Types(යවන data type එක දන්නේ නැත්නම් | (union) එක use කරලා string කියලා දෙනවා)
+function getNumber(myNumber) {
+    console.log(myNumber);
+    //Narrowing
+    if (typeof myNumber === 'string') {
+        return parseInt(myNumber);
+    }
+    return myNumber;
+}
+getNumber(10);
