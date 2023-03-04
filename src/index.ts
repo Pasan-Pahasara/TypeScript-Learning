@@ -92,3 +92,13 @@ function getNumber(myNumber:number | string):number{
     return myNumber;
 }
 getNumber(10);
+
+//Nullable values
+function generate(name:string | null | undefined){
+    if(name){
+        console.log(name);
+    }else{
+        console.log("Nothing");
+    }
+}
+generate(undefined);

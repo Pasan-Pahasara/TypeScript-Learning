@@ -60,7 +60,6 @@ let employee2 = {
 };
 //Union Types(යවන data type එක දන්නේ නැත්නම් | (union) එක use කරලා string කියලා දෙනවා)
 function getNumber(myNumber) {
-    console.log(myNumber);
     //Narrowing
     if (typeof myNumber === 'string') {
         return parseInt(myNumber);
@@ -68,3 +67,13 @@ function getNumber(myNumber) {
     return myNumber;
 }
 getNumber(10);
+//Nullable values
+function generate(name) {
+    if (name) {
+        console.log(name);
+    }
+    else {
+        console.log("Nothing");
+    }
+}
+generate(undefined);
