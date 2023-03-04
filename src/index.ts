@@ -50,3 +50,19 @@ function addNumbers(firstNumber:number, secondNumber?:number){
 }
 console.log(addNumbers(10))
 
+//Object
+let student:{
+    id:number;name:string;age:number
+}={
+    id:1,name:"pahasara",age:5
+};
+
+//Object
+let teacher:{
+    id:number;name:string;enroll?:(date:Date)=> void }={
+    id:1,
+    name:"Pahasara",
+    enroll:(date:Date)=>{
+        console.log(date)
+    },
+};
