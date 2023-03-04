@@ -38,3 +38,23 @@ function addNumbers(firstNumber, secondNumber) {
     return firstNumber;
 }
 console.log(addNumbers(10));
+//Object
+let student = {
+    id: 1, name: "pahasara", age: 5
+};
+//Object
+let teacher = {
+    id: 1,
+    name: "Pahasara",
+    enroll: (date) => {
+        console.log(date);
+    },
+};
+let employee1 = {
+    id: 1,
+    name: "Kamal"
+};
+let employee2 = {
+    id: 2,
+    name: "Kamal"
+};

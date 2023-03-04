@@ -66,3 +66,19 @@ let teacher:{
         console.log(date)
     },
 };
+
+//type aliases (එක වගේ methods දෙකක් use කරන්න මේක use කරනවා)
+type Employee={
+    id:number;
+    name:string
+}
+
+let employee1:Employee ={
+    id:1,
+    name:"Kamal"
+}
+
+let employee2:Employee ={
+    id:2,
+    name:"Kamal"
+}
